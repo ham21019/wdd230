@@ -7,8 +7,7 @@
   }
   
   body {
-    font-size: 20px;
-    height: 100vh;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +23,6 @@
     font-size: 1.4rem;
     text-align: center;
     padding: 10px;
-    background: radial-gradient(circle, rgba(70, 80, 120, 1), rgba(7, 40, 60, 0.5));
     color: #fff;
   }
   
@@ -71,7 +69,7 @@
   }
   
   .small_txt {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: rgba(25, 25, 95, 0.8);
   }
   
@@ -101,7 +99,7 @@
     border-bottom: 3px solid #fff;
     padding: 0.4rem;
     width: fit-content;
-    padding-top: 50px;
+    padding-top: 25px;
   }
   
   .info {
@@ -126,6 +124,6 @@
   }
   
   #headshot {
-    height: 100px;
+    height: 125px;
     width: auto;
   }
