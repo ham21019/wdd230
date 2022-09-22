@@ -4,19 +4,22 @@ body {
 }
 
 main {
-	max-width: 600px;
+	max-width: 750px;
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	font-size: 0.8rem;
 }
 
-header h1 {
+header {
 	background-color: rgb(255,164,0);
 	color: navy;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-align: center;
-	padding: 2rem;
+	padding: 1.5rem;
+}
+
+header p {
+	font-size: 1.8rem;
 }
 
 main section h2 {
@@ -29,8 +32,8 @@ main section h2 {
 main section {
 	margin: 0.5rem;
 	border: 1px solid #bbb;
-	padding: 0 1rem;
-	background-color: rgb(255,164,0);
+	padding: 1rem;
+	background-color: #eee;
 }
 
 .mainimage {
@@ -42,8 +45,7 @@ main section {
 main section p {
 	display: block;
 	margin: auto;
-	padding-top: 1rem;
-	padding-bottom: 1.5rem;
+	padding: 1rem;
 	border: 2rem;
 	font-size: 1.2rem;
 }

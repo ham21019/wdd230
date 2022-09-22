@@ -35,3 +35,6 @@ document.getElementById("currentDate").textContent = `Today is ${
 
 // display the lastMod
 document.getElementById("lastmod").textContent = document.lastModified;
+
+// display copyright date
+document.querySelector("#copyright").textContent = `${myDate.getFullYear()}`;
