@@ -15,7 +15,7 @@ header {
 	color: navy;
 	font-size: 1.5rem;
 	text-align: center;
-	padding: 1.5rem;
+	border-radius: 25px;
 }
 
 header h2 {
@@ -39,6 +39,7 @@ main section {
 	border: 1px solid #bbb;
 	padding: 1rem;
 	background-color: #eee;
+	border-radius: 25px;
 }
 
 .mainimage {
@@ -52,7 +53,8 @@ main section p {
 	margin: auto;
 	padding: 1rem;
 	border: 2rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+	line-height: 1.6;
 }
 
 footer {
@@ -61,4 +63,5 @@ footer {
 	font-size: .8rem;
 	text-align: center;
 	padding: 1.5rem;
+	border-radius: 25px;
 }
