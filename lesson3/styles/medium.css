@@ -1,0 +1,17 @@
+@media only screen and (min-width: 30em) {
+    header img {
+        visibility: visible;
+        max-width: 450px;
+        height: auto;
+        padding-top: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+}
