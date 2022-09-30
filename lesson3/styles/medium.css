@@ -8,10 +8,14 @@
         margin: 0 auto;
     }
 
-    nav {
+    nav, footer {
         padding: 20px;
         display: flex;
         flex-direction: row;
         text-align: center;
+    }
+
+    footer span {
+        flex: 1 1 auto;
     }
 }
