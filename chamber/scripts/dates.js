@@ -1,5 +1,3 @@
-// I learned this date format last semester in Bro. Blazzard's CSE121B class
-
 // Create a new date object called myDate
 let myDate = new Date();
 
@@ -33,8 +31,8 @@ document.getElementById("currentDate").textContent = `Today is ${
   weekday[myDate.getDay()]
 }, ${myDate.getDate()} ${month[myDate.getMonth()]} ${myDate.getFullYear()}`;
 
-// display the lastMod
-document.getElementById("lastmod").textContent = document.lastModified;
+// display the lastmod date and time
+document.getElementById("lastmod").textContent = `Last Modified: ${document.lastModified}`;
 
 // display copyright date
-document.querySelector("#copyright").textContent = `${myDate.getFullYear()}`;
+document.querySelector("#copyright").textContent = `©${myDate.getFullYear()}`;

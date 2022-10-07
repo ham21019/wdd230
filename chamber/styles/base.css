@@ -1,0 +1,209 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #679436;
+}
+
+header, main, footer {
+    background-color: #ffa400;
+    color: #010080;
+}
+
+header {
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#currentDate {
+    padding: 25px   ;
+    grid-column: 1/4;
+}   
+
+.social {
+    margin: 0 auto;
+    display: block;
+    grid-column: 3/4;
+    padding-top: 25px;
+}
+
+.social a img {
+    width: 30px;
+    height: auto;
+}
+
+
+nav {
+    grid-row: 3/4;
+}
+.nav_logo {
+    grid-column: 1/4;
+}
+
+.nav_logo img {
+    width: 300px;
+    height: auto;
+}
+
+nav, footer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 0;
+}
+
+nav a {
+    flex: 1 1 auto;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #EAF6FF;
+    background-color: #010080;
+    border-radius: 15px;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a.ham::before {
+	content: "☰";
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+.navigation a:hover {
+	color: #EAF6FF;
+	background-color: #010080;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "❌ ";
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1 fr;
+    padding: 25px;
+    text-align: left;
+    background-color: #EAF6FF;
+    color: #0C120C;
+}
+
+.hero_img, .events, .weather, .news, .spotlight, .join, .call_to_action {
+    padding: 12px;
+    border: solid #010080;
+    border-radius: 25px;
+    margin: 13px;
+}
+
+.hero_img {
+    grid-row: 1/2;
+}
+
+.events {
+    grid-row: 2/3;
+}
+
+.weather {
+    grid-row: 3/4;
+}
+
+.news {
+    grid-row: 4/5;
+}
+
+.spotlight {
+    grid-row: 5/6;
+}
+
+.join {
+    display: none;
+}
+
+.call_to_action {
+    display: none;
+}
+
+#spot1, #spot2, #spot3 {
+    padding: 10px;
+    border: solid #010080;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#spot3 {
+    display: none;
+}
+
+footer {
+    border-radius: 0 0 25px 25px;
+    padding: 25px 0;
+}
+
+.footer_small {
+    display: none;
+}
+
+footer span img {
+    height: 25px;
+    width: auto;
+}
+
+footer h2 {
+    font-size: 1rem;
+}
+
+footer h3 {
+    font-size: 1rem;
+}
