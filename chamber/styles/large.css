@@ -67,6 +67,8 @@
         grid-row: 3/4;
     }
 
+    /* will try to make this look better in the future
+    
     footer {
         display: grid;
     }
@@ -82,5 +84,5 @@
 
     .lastmod {
         grid-row: 3/4;
-    }
+    } */
 }
