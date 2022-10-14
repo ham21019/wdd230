@@ -38,8 +38,12 @@ header {
 
 
 nav {
+    grid-column: 1/3;
     grid-row: 3/4;
+    width: 250px;
+    padding-left: 15px;
 }
+
 .nav_logo {
     grid-column: 1/4;
 }
@@ -74,6 +78,7 @@ nav a:hover {
 .navigation {
 	list-style: none;
 	padding: 0;
+    line-height: 1.5;
 }
 
 .navigation li:first-child {

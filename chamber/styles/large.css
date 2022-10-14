@@ -13,6 +13,10 @@
 		display: none;
 	}
 
+    nav {
+        grid-column: 1/2;
+    }
+
     main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
