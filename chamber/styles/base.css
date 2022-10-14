@@ -282,3 +282,13 @@ footer h2 {
 footer h3 {
     font-size: 1rem;
 }
+
+.meeting_banner {
+    display: none;
+    padding-top: 0px;
+    text-align: center;
+    border: 2px solid #010080;
+    border-radius: 25px;
+    grid-column: span 3;
+}
+  

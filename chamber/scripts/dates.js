@@ -36,3 +36,15 @@ document.getElementById("lastmod").textContent = `Last Modified: ${document.last
 
 // display copyright date
 document.querySelector("#copyright").textContent = `©${myDate.getFullYear()}`;
+
+// Create a variable for the meeting banner
+const meetingBanner = document.querySelector(".meeting_banner");
+
+// Add an event listener to run when the website has loaded
+window.addEventListener("load", () => {
+  // displays the banner on Monday's and Tuesday's
+  if (myDate.getDay() < 3 && 
+    myDate.getDay() > 0) {
+    meetingBanner.style.display = "block";
+  }
+}, false);
