@@ -21,6 +21,10 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    main h3 {
+        font-size: 1rem;
+    }
+
     .events, .weather, .join {
         grid-column: 1/2;
     }
@@ -48,6 +52,7 @@
     #spot3 {
         display: grid;
         grid-row: 3/4;
+        background-color: #ffa400;
     }
 
     .events {
@@ -59,8 +64,12 @@
     }
 
     .join {
-        display: grid;
         grid-row: 3/4;
+    }
+
+    .join h3 {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .hero_img {
