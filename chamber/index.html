@@ -15,19 +15,20 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
     <header>
         <div id="currentDate"></div>
         <section class="nav_logo">
-            <img src="images/logo_large.png" alt="Logo for Queen Creek Chamber">
+            <img src="images/logo-large.webp" alt="Logo for Queen Creek Chamber">
         </section>
         <section class="social">
             <a href="https://www.facebook.com/" target="_blank">
-                <img id="fb" src="images/facebook.png" alt="External link to FaceBook website"></a>
+                <img id="fb" src="images/facebook.webp" alt="External link to FaceBook website"></a>
             <a href="https://www.linkedin.com/" target="_blank">
-                <img id="lin" src="images/linkedin.png" alt="External link to LinkedIn website"></a>
+                <img id="lin" src="images/linkedin.webp" alt="External link to LinkedIn website"></a>
         </section>
         <div class="meeting_banner">
             <p>
@@ -48,7 +49,10 @@
     <main>
         <section class="hero_img">
              <button id="hero_button">Join the Chamber!</button>
-             <img src="images/townofqueencreek.jpg" alt="Image welcoming you to Queen Creek, AZ">
+             <picture>
+                 <srcset></srcset>
+                <img src="images/wdd230-org-900x600.webp" alt="Image welcoming you to Queen Creek, AZ">
+             </picture>
         </section>
         <section class="call_to_action">
              <h2>call to action goes here</h2>
@@ -72,15 +76,18 @@
         </section>
         <section class="weather">
              <h2>Weather</h2>
-             <img src="images/partlycloudy.jpg" alt="Weather today is party cloudy">
+             <img src="images/partlycloudy.webp" alt="Weather today is party cloudy">
              <p>
                 Skies: Partly Cloudy
              </p>
              <p>
-                Wind Speed: 2.5 km/h
+                Temp: <span id="temp"></span> °F
              </p>
              <p>
-                Wind Chill: N/A
+                Wind Speed: <span id="mph"></span> mph
+             </p>
+             <p>
+                Wind Chill: <span id="windchill"></span>
              </p>
         </section>
         <section class="join">
@@ -92,17 +99,17 @@
         <section class="spotlight">
             <div id="spot1">
                  <h2>Harkins Theatre</h2>
-                 <img src="images/harkins.jpg" alt="Harkins Theatre Logo">
+                 <img src="images/harkins.webp" alt="Harkins Theatre Logo">
                  <a href="https://www.harkins.com/">website</a>
             </div>
             <div id="spot2">
                  <h2>Las Colinas Golf Club</h2>
-                 <img src="images/lascolinasgolfclub.jpg" alt="Las Colinas Golf Club Image">
+                 <img src="images/lascolinasgolfclub.webp" alt="Las Colinas Golf Club Image">
                  <a href="https://www.lascolinasgolfaz.com/">website</a>
             </div>
             <div id="spot3">
                  <h2>AB Pest Control</h2>
-                 <img src="images/abpeset.png" alt="AB Pest Control Logo">
+                 <img src="images/abpeset.webp" alt="AB Pest Control Logo">
                  <a href="https://www.abpestcontrol.com/">website</a>
             </div>
         </section>
@@ -113,7 +120,7 @@
         <section class="address">
             <h2>Queen Creek, AZ Chamber of Commerce</h2>
             <h3>123 Elm St. Queen Creek, AZ 85142</h3>
-            <h3>🗺 location 📍</h3>
+            <h3>📍 location 📍</h3>
             <h3>☎️ (480) 555-2468</h3>
             <a href="mailto:info@queencreekazchamber.com">info@queencreekazchamber.com</a>
         </section>
