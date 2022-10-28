@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+picture {
+    padding: 25px 0;
+    border: 2px solid red;
+    margin: 25px 0;
+}
+
+picture:hover {
+ border: 6px double navy;
+ border-radius: 25px;
+}
