@@ -67,31 +67,48 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 
-// determine how many days since last visit
-const daysSince = document.querySelector("#days_since")
+// // determine how many days since last visit
+// const daysSince = document.querySelector("#days_since")
 
-let todayDate = new Date();
-let date_2 = new Date();
-console.log(b - a); //this works
-localStorage.a = a;
-localStorage.b = b;
-a = Date.parse(localStorage.a); // parse to date object
-b = Date.parse(localStorage.b);
-console.log(b - a); // now, this will work
+// let todayDate = new Date();
+// let date_2 = new Date();
+// console.log(b - a); //this works
+// localStorage.a = a;
+// localStorage.b = b;
+// a = Date.parse(localStorage.a); // parse to date object
+// b = Date.parse(localStorage.b);
+// console.log(b - a); // now, this will work
 
-// let date_2 = Date.parse(localStorage.getItem("daysSince-ls"));
+// // let date_2 = Date.parse(localStorage.getItem("daysSince-ls"));
 
-let daysSinceVisit = Number(window.localStorage.getItem("daysSince-ls"));
+// let daysSinceVisit = Number(window.localStorage.getItem("daysSince-ls"));
 
-const days = (date_1, date_2) =>{
-    let difference = date_1.getTime() - date_2.getTime();
-    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-    return TotalDays;
+// const days = (date_1, date_2) =>{
+//     let difference = date_1.getTime() - date_2.getTime();
+//     let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+//     return TotalDays;
+// }
+// console.log(days(todayDate, date_2) +" days since last visit");
+
+// // store daysSinceVisit
+// localStorage.setItem("daysSince-ls", date_2);
+
+// // update DOM
+// daysSince.textContent = `${days(todayDate, date_2)} days since last visit`
+
+// Days Since Last Visit Section
+const todayDate = new Date();
+let dayBefore = localStorage.getItem('daysSince-ls');
+
+localStorage.setItem('daysSince-ls', todayDate);
+
+dayBefore = Date.parse(dayBefore);
+
+const daysSinceVisit = (todayDate - dayBefore) / (1000 * 3600 * 24);
+
+if (!daysSinceVisit) {
+    document.querySelector("#days_since").textContent = `0 days since last visit`
 }
-console.log(days(todayDate, date_2) +" days since last visit");
-
-// store daysSinceVisit
-localStorage.setItem("daysSince-ls", date_2);
-
-// update DOM
-daysSince.textContent = `${days(todayDate, date_2)} days since last visit`
+else {
+    document.querySelector("#days_since").textContent = `${daysSinceVisit.toFixed(0)} days since last visit`;
+}
