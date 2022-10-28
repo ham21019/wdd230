@@ -48,3 +48,50 @@ window.addEventListener("load", () => {
     meetingBanner.style.display = "block";
   }
 }, false);
+
+// initialize display elements for number of visits and days since information
+const visitsDisplay = document.querySelector("#visits");
+
+// get the stored value in localStorage for number of visits
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+// determine if this is the first visit or display the number of visits.
+if (numVisits !== 0) {
+	visitsDisplay.textContent = `Number of Visits: ${numVisits}`;
+} else {
+	visitsDisplay.textContent = `This is your first visit!`;
+}
+
+// increment the number of visits.
+numVisits++;
+// store the new number of visits value
+localStorage.setItem("visits-ls", numVisits);
+
+// determine how many days since last visit
+const daysSince = document.querySelector("#days_since")
+
+let todayDate = new Date();
+let date_2 = new Date();
+console.log(b - a); //this works
+localStorage.a = a;
+localStorage.b = b;
+a = Date.parse(localStorage.a); // parse to date object
+b = Date.parse(localStorage.b);
+console.log(b - a); // now, this will work
+
+// let date_2 = Date.parse(localStorage.getItem("daysSince-ls"));
+
+let daysSinceVisit = Number(window.localStorage.getItem("daysSince-ls"));
+
+const days = (date_1, date_2) =>{
+    let difference = date_1.getTime() - date_2.getTime();
+    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+    return TotalDays;
+}
+console.log(days(todayDate, date_2) +" days since last visit");
+
+// store daysSinceVisit
+localStorage.setItem("daysSince-ls", date_2);
+
+// update DOM
+daysSince.textContent = `${days(todayDate, date_2)} days since last visit`
