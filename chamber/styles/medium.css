@@ -3,8 +3,12 @@
         grid-column: 1/2;
     }
     
-    main{
+    main {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #discovery {
+        display: block;
     }
 
     .hero_img {
@@ -84,5 +88,11 @@
 
     #spot2 {
         grid-column: 2/3;
+    }
+
+    .sites picture:hover {
+    border: 6px double navy;
+    border-radius: 25px;
+    box-shadow: 0 0 30px 15px #777;
     }
 }

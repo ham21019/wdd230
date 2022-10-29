@@ -13,4 +13,5 @@ picture {
 picture:hover {
  border: 6px double navy;
  border-radius: 25px;
+ box-shadow: 0 0 30px 15px #777;
 }
