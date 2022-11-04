@@ -328,3 +328,42 @@ button, a {
     align-items: center;
     text-align: center;
 }
+
+form fieldset {
+    margin: 2rem;
+    border: 2px #010080 solid;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    /* min-width: 22rem; */
+}
+
+form legend {
+    color: #010080;
+    margin: 0 1rem;
+    padding: .4rem 1rem;
+    background-color: #ffa400;
+    border-radius: 15px;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color:#0C120C;
+    font-size: .8rem;
+}
+
+form label.top input {
+    display: block;
+    font-size: 1rem;
+    border: 2px solid #010080;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #0C120C;
+    width: 86%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.membership {
+    display: block;
+}

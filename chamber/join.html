@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
@@ -52,7 +51,7 @@
         <p>* indicates required.</p>
         <form action="thankyou.html" method="get">
             <fieldset>
-                <legend>Registrater for New Account</legend>
+                <legend>New Account Sign Up</legend>
                 <label class="top">
                     <span>First Name*</span>
                     <input type="text" name="fname" autofocus required>
@@ -89,31 +88,31 @@
             <fieldset>
                 <legend>Membership Level</legend>
                 <div id="member-benefits">Benefits</div>
-                <label class="top membership">
+                <label class="membership">
                     <input type="radio" name="membership" value="np">
                     <span>Non-profit</span>
                     <span id="span-benefits1" class="member-benefits">Fee: free, basic level benefits</span>
                 </label>
-                <label class="top membership">
+                <label class="membership">
                     <input type="radio" name="membership" value="bronze">
                     <span>Bronze</span>
                     <span id="span-benefits2" class="member-benefits">Fee: $40/yr, bronze level benefits</span>
                 </label>
-                <label class="top membership">
+                <label class="membership">
                     <input type="radio" name="membership" value="silver">
                     <span>Silver</span>
                     <span id="span-benefits3" class="member-benefits">Fee: $80/yr, silver level benefits</span>
                 </label>
-                <label class="top membership">
+                <label class="membership">
                     <input type="radio" name="membership" value="gold">
                     <span>Gold</span>
                     <span id="span-benefits4" class="member-benefits">Fee: $120/yr, gold level benefits</span>
                 </label>
                 <label id="dateSubmitted"></label>
-                    <input type="hidden" name="dateSubmitted">
+                    <input type="hidden" name="dateSubmitted" value="">
                 </label>
             </fieldset>
-            <input type="submit" value="Apply for Membershihp" id="submitBtn" />
+            <input type="submit" value="Apply for Membershihp" id="submitBtn">
         </form>
     </main>
     <footer>
