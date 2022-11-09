@@ -1,0 +1,55 @@
+body {
+    background: #08415C;
+  }
+  
+  main {
+    margin: auto 0px;
+    text-align: center;
+    color: #08415C;
+    margin: 1rem;
+  }
+  
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+  }
+  
+  section {
+    padding: 0 1rem;
+    border-radius: 15px;
+    background: white;
+  }
+  
+  h1 {
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    color: #08415C;
+  }
+  
+  img {
+    max-height: 320px;
+    border-right: 1rem solid #EB9D1E;
+    border-top: 1rem solid #96620D;
+    border-bottom: 1rem solid #EFAD43;
+    border-left: 1rem solid #B1740F;
+  }
+  
+  li {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: #08415C;
+  }
+
+  footer {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
