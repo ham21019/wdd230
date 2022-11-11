@@ -392,3 +392,15 @@ form label.top input:required:valid {
     align-items: center;
     text-align: center;
 }
+
+.membershipBenefits {
+    border: 2px solid #679436;
+    padding: .75rem;
+    border-radius: 25px;
+    box-shadow: 1px 0px 0.6rem #ffa400;
+    margin-bottom: 25px;
+}
+
+.membershipBenefits h2 {
+    text-align: center;
+}
