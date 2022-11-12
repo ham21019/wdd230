@@ -40,14 +40,6 @@ body {
     border-left: 1rem solid #B1740F;
   }
   
-  li {
-    display: block;
-    text-align: center;
-    padding: 0.75rem;
-    text-decoration: none;
-    color: #08415C;
-  }
-
   footer {
     text-align: center;
     color: white;

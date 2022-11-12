@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -46,8 +46,17 @@
             </ul>
         </nav>
     </header>
-    <main>
-
+    <main id="main-dir">
+        <h1>Directory of Members</h1>
+        <div class="toggle">
+            <button id="listBtn">
+                <span>LIST VIEW</span>
+            </button>
+            <button id="gridBtn">
+                <span>GRID VIEW</span>
+            </button>
+        </div>
+        <div class="cards"></div>
     </main>
     <footer>
         <span><img src="images/logo-large.webp" alt="Small Version of Chamber Logo"></span>

@@ -1,0 +1,94 @@
+{
+  "businesses": [
+    {
+      "category": "Entertainment",
+      "name": "Harkins Theatre",
+      "address": "321 Elf Ln, Queen Creek, AZ 85142",
+      "phone": "(480) 555-1234",
+      "fax": "(480) 555-0123",
+      "url": "https://www.harkins.com/",
+      "logo": "images/harkins.webp",
+      "member": "Gold"
+    },
+    {
+      "category": "Entertainment",
+      "name": "Las Colinas Golf Club",
+      "address": "876 Main St, Queen Creek, AZ 85142",
+      "phone": "(480) 555-1010",
+      "fax": "(480) 555-9753",
+      "url": "https://www.lascolinasgolfaz.com/",
+      "logo": "images/lascolinasgolfclub.webp",
+      "member": "Gold"
+    },
+    {
+      "category": "Home Services",
+      "name": "AB Pest Control",
+      "address": "222 High St, Queen Creek, AZ 85142",
+      "phone": "(480) 555-0982",
+      "fax": "(480) 555-8234",
+      "url": "https://www.abpestcontrol.com/",
+      "logo": "images/abpest.webp",
+      "member": "Gold"
+    },
+    {
+      "category": "Financial",
+      "name": "Bank of Arizona",
+      "address": "777 Pear Ave, Queen Creek, AZ 85142",
+      "phone": "(480) 555-8064",
+      "fax": "(480) 555-0562",
+      "url": "https://bankofarizona.com",
+      "logo": "images/bankofaz.webp",
+      "member": "Silver"
+    },
+    {
+      "category": "Lodging",
+      "name": "Hampton Inn",
+      "address": "827 Main St, Queen Creek, AZ 85142",
+      "phone": "(480) 555-3668",
+      "fax": "(480) 555-3957",
+      "url": "https://hamptoninn.com",
+      "logo": "images/hamptoninn.webp",
+      "member": "Silver"
+    },
+    {
+      "category": "Dining",
+      "name": "The Olive Mill",
+      "address": "222 Lemon St, Queen Creek, AZ 85142",
+      "phone": "(480) 555-0603",
+      "fax": "(480) 555-7887",
+      "url": "https://www.olivemill.com/",
+      "logo": "images/olivemill.webp",
+      "member": "Bronze"
+    },
+    {
+      "category": "Shopping",
+      "name": "Target",
+      "address": "333 Melon St, Queen Creek, AZ 85142",
+      "phone": "(480) 555-2669",
+      "fax": "(480) 555-1330",
+      "url": "https://target.com/",
+      "logo": "images/target.webp",
+      "member": "Bronze"
+    },
+    {
+      "category": "Shopping",
+      "name": "World Market",
+      "address": "222 Jack St, Queen Creek, AZ 85142",
+      "phone": "(480) 555-6539",
+      "fax": "(480) 555-9236",
+      "url": "https://worldmarket.com/",
+      "logo": "images/worldmarket.webp",
+      "member": "Bronze"
+    },
+    {
+      "category": "Community Enrichment",
+      "name": "Toys for Tots",
+      "address": "999 High St, Queen Creek, AZ 85142",
+      "phone": "(480) 555-2837",
+      "fax": "(480) 555-0027",
+      "url": "https://toys4tots.org/",
+      "logo": "images/toysfortots.webp",
+      "member": "Non-Profit"
+    }
+  ]
+}

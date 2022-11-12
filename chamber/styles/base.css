@@ -406,3 +406,72 @@ form label.top input:required:valid {
 .membershipBenefits h2 {
     text-align: center;
 }
+
+#main-dir {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+#main-dir h1 {
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.cards {
+    margin: 0 auto;
+    grid-column: 1/5;
+}
+
+.cards section {
+    border: 2px solid #010080;
+    border-radius: 25px;
+    padding: .75rem;
+    text-align: center;
+    margin: 25px;
+    box-shadow: 1px 0px 0.6rem #ffa400;
+}
+
+.cards img {
+    border-radius: 15px;
+    background-color: #ffa400;
+}
+
+.toggle {
+    margin-top: 25px;
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.toggle button {
+    border-radius: 10px;
+    padding: .5rem;
+    margin-bottom: 10px;
+    background-color: #010080;
+    color: #EAF6FF;
+}
+
+.toggle button:hover {
+    background-color: #EAF6FF;
+    color: #0C120C;
+}
+
+.list {
+    border: 1px solid #010080;
+    grid-column: 1/5;
+}
+
+.list section {
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    padding-left: 25px;
+}
+
+.list section:nth-child(even) {
+    background-color: #ffa400;
+    padding: 10px 25px;
+}
+
+.list img {
+    display: none;
+}
