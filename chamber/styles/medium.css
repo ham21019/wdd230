@@ -114,6 +114,10 @@
         align-items: center;
     }
 
+    #main-dir {
+        grid-template-columns: 1fr;
+    }
+
     .cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

@@ -409,17 +409,10 @@ form label.top input:required:valid {
 
 #main-dir {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 #main-dir h1 {
-    grid-column: 1/5;
     text-align: center;
-}
-
-.cards {
-    margin: 0 auto;
-    grid-column: 1/5;
 }
 
 .cards section {
@@ -438,7 +431,6 @@ form label.top input:required:valid {
 
 .toggle {
     margin-top: 25px;
-    grid-column: 1/5;
     text-align: center;
 }
 
@@ -457,7 +449,6 @@ form label.top input:required:valid {
 
 .list {
     border: 1px solid #010080;
-    grid-column: 1/5;
 }
 
 .list section {
