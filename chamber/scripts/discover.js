@@ -49,37 +49,37 @@ window.addEventListener("load", () => {
   }
 }, false);
 
-// // initialize display elements for number of visits and days since information
-// const visitsDisplay = document.querySelector("#visits");
+// initialize display elements for number of visits and days since information
+const visitsDisplay = document.querySelector("#visits");
 
-// // get the stored value in localStorage for number of visits
-// let numVisits = Number(window.localStorage.getItem("visits-ls"));
+// get the stored value in localStorage for number of visits
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
-// // determine if this is the first visit or display the number of visits.
-// if (numVisits !== 0) {
-// 	visitsDisplay.textContent = `Number of Visits: ${numVisits}`;
-// } else {
-// 	visitsDisplay.textContent = `This is your first visit!`;
-// }
+// determine if this is the first visit or display the number of visits.
+if (numVisits !== 0) {
+	visitsDisplay.textContent = `Number of Visits: ${numVisits}`;
+} else {
+	visitsDisplay.textContent = `This is your first visit!`;
+}
 
-// // increment the number of visits.
-// numVisits++;
-// // store the new number of visits value
-// localStorage.setItem("visits-ls", numVisits);
+// increment the number of visits.
+numVisits++;
+// store the new number of visits value
+localStorage.setItem("visits-ls", numVisits);
 
-// // Days Since Last Visit Section
-// const todayDate = new Date();
-// let dayBefore = localStorage.getItem('daysSince-ls');
+// Days Since Last Visit Section
+const todayDate = new Date();
+let dayBefore = localStorage.getItem('daysSince-ls');
 
-// localStorage.setItem('daysSince-ls', todayDate);
+localStorage.setItem('daysSince-ls', todayDate);
 
-// dayBefore = Date.parse(dayBefore);
+dayBefore = Date.parse(dayBefore);
 
-// const daysSinceVisit = (todayDate - dayBefore) / (1000 * 3600 * 24);
+const daysSinceVisit = (todayDate - dayBefore) / (1000 * 3600 * 24);
 
-// if (!daysSinceVisit) {
-//     document.querySelector("#days_since").textContent = `0 days since last visit`
-// }
-// else {
-//     document.querySelector("#days_since").textContent = `${daysSinceVisit.toFixed(0)} days since last visit`;
-// }
+if (!daysSinceVisit) {
+    document.querySelector("#days_since").textContent = `0 days since last visit`
+}
+else {
+    document.querySelector("#days_since").textContent = `${daysSinceVisit.toFixed(0)} days since last visit`;
+}
