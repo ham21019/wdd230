@@ -2,9 +2,44 @@
 const temp = document.querySelector("#temp");
 const mph = document.querySelector("#mph");
 const windChillOutput = document.querySelector("#windchill");
+const weatherIcon = document.querySelector("#weather-icon");
+const captionDesc = document.querySelector("#figcaption");
 
-const mphInput = 12
-const tempInput = 42
+// url variable for Queen Creek
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Queen%20Creek&units=imperial&appid=209401470a99f981b833442b6de9857c";
+
+// apiFetch function to get JSON information
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+      displayResults(data); // had to uncomment
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
+}
+
+apiFetch();
+
+function  displayResults(weatherData) {
+  temp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+
+  const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`;
+  const desc = weatherData.weather[0].description;
+
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = desc.toUpperCase();
+  
+  mph.textContent = `Wind Speed: ${Math.round(weatherData.wind.speed)} mph`;
+  temp.textContent = `Current Temp: ${weatherData.main.temp.toFixed(0)}° F`;
+  windChillOutput.textContent = `Wind Chill: ${getWindChill(weatherData.wind.speed, weatherData.main.temp)}`;
+}
 
 // Calculate the Wind Chill Factor
 function getWindChill(mphInput, tempInput) {
@@ -23,7 +58,3 @@ function getWindChill(mphInput, tempInput) {
   }
   return windChill;
 }
-
-mph.textContent = `${mphInput}`;
-temp.textContent = `${tempInput}`;
-windChillOutput.textContent = getWindChill(mphInput,tempInput);
