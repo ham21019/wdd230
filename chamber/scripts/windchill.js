@@ -27,18 +27,16 @@ async function apiFetch() {
 apiFetch();
 
 function  displayResults(weatherData) {
-  temp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-
   const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`;
   const desc = weatherData.weather[0].description;
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = desc.toUpperCase();
   
-  mph.textContent = `Wind Speed: ${Math.round(weatherData.wind.speed)} mph`;
-  temp.textContent = `Current Temp: ${weatherData.main.temp.toFixed(0)}° F`;
-  windChillOutput.textContent = `Wind Chill: ${getWindChill(weatherData.wind.speed, weatherData.main.temp)}`;
+  captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${desc.toUpperCase()}`;
+  mph.innerHTML = `<strong>Wind Speed:</strong> ${Math.round(weatherData.wind.speed)} mph`;
+  temp.innerHTML = `<strong>Current Temp:</strong> ${weatherData.main.temp.toFixed(0)}° F`;
+  windChillOutput.innerHTML = `<strong>Wind Chill:</strong> ${getWindChill(weatherData.wind.speed, weatherData.main.temp)}`;
 }
 
 // Calculate the Wind Chill Factor

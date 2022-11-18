@@ -200,10 +200,22 @@ picture img {
     align-items: center;
 }
 
+.weather h2 {
+    margin: 10px;
+}
+
 .weather img {
-    height: 150px;
+    height: 100px;
     border-radius: 25px;
     border: 2px solid #010080;
+}
+
+.weather span {
+    padding-top: 10px;
+}
+
+#windchill {
+    padding-bottom: 12px;
 }
 
 .news {
