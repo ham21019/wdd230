@@ -253,6 +253,14 @@ picture img {
     display: none;
 }
 
+.join a, .hero_img a {
+    text-decoration: none;
+}
+
+.join a:visited, .hero_img a {
+    color: #EAF6FF;
+}
+
 .call_to_action {
     display: none;
 }
