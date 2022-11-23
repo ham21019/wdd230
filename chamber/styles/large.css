@@ -33,7 +33,7 @@
         grid-column: 2/3;
     }
 
-    .spotlight {
+    .local_biz {
         grid-column: 3/4;
         grid-row: 1/4;
         display: grid;
@@ -52,7 +52,6 @@
     #spot3 {
         display: grid;
         grid-row: 3/4;
-        background-color: #ffa400;
     }
 
     .events {

@@ -19,8 +19,11 @@
         grid-row: 2/3;
     }
 
-    .spotlight {
+    .local_biz {
         grid-row: 3/4;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .join {
@@ -64,11 +67,6 @@
 
     .weather {
         grid-column: 3/4;
-    }
-
-    .spotlight {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 
     #spot1 {
