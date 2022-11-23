@@ -95,7 +95,7 @@
         font-size: 1.5rem;
     }
 
-    #main-join {
+    #main-join, #contact-main {
         display: flex;
         flex-direction: column;
         align-items: center;

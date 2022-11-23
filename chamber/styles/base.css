@@ -321,12 +321,16 @@ button, a {
     display: grid;
 }
 
-#main-join h1, #main-join p {
+#main-join h1, #main-join p, #contact-main h1, #contact-main h2, #contact-main p {
     margin: 0 auto;
 }
 
-#main-join {
-    padding: 0;
+#main-join, #contact-main {
+    padding-top: 25px;
+}
+
+#contact-main h2 {
+    padding-top: 25px;
 }
 
 form fieldset {
