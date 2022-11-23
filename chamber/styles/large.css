@@ -71,6 +71,10 @@
         padding-right: 10px;
     }
 
+    #join_us {
+        padding-top: 24px;
+    }
+
     .hero_img {
         grid-row: 1/3;
     }

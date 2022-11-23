@@ -40,6 +40,9 @@
         border-radius: 25px;
         grid-column: 2/3;
         grid-row: 2/3;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 11px;
     }
 
     #join_us:hover {

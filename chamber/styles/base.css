@@ -156,10 +156,9 @@ main {
     grid-template-rows: 15px 30px 1fr 30px 15px;
 }
 
-.hero_img button {
+#hero_button {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding-left: 15px;
     z-index: 1;
     height: 2rem;
     width: 10rem;
@@ -167,9 +166,12 @@ main {
     border-radius: 25px;
     background-color: #010080;
     color: #EAF6FF;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 9px;
 }
 
-.hero_img button:hover {
+#hero_button:hover {
     background-color: #ffa400;
     color: #0C120C;
 }
@@ -251,14 +253,6 @@ picture img {
 
 .join {
     display: none;
-}
-
-.join a, .hero_img a {
-    text-decoration: none;
-}
-
-.join a:visited, .hero_img a {
-    color: #EAF6FF;
 }
 
 .call_to_action {
