@@ -144,8 +144,8 @@ main {
     color: #0C120C;
 }
 
-.hero_img, .events, .weather, .news, .spotlight, .join, .call_to_action {
-    border: 3px solid #010080;
+.hero_img, .events, .weather, .news, .local_biz, .join, .call_to_action {
+    border: 3px solid #010080; 
     border-radius: 25px;
     margin: 13px;
 }
