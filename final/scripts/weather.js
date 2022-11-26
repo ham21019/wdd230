@@ -4,19 +4,19 @@ const mph = document.querySelector("#mph");
 const weatherIcon = document.querySelector("#weather_icon");
 const captionDesc = document.querySelector("#figcaption");
 
-// Tomorrow Weather HTML elements to edit
+// omorrow Weather HTML elements to edit
 const tomorrow_temp = document.querySelector("#tomorrow_temp");
 const tomorrow_mph = document.querySelector("#tomorrow_mph");
 const tomorrow_weatherIcon = document.querySelector("#tomorrow_icon");
 const tomorrow_captionDesc = document.querySelector("#tomorrow_figcaption");
 
-// Two Days Weather HTML elements to edit
+// twoDays Weather HTML elements to edit
 const twoDays_temp = document.querySelector("#twoDays_temp");
 const twoDays_mph = document.querySelector("#twoDays_mph");
 const twoDays_weatherIcon = document.querySelector("#twoDays_icon");
 const twoDays_captionDesc = document.querySelector("#twoDays_figcaption");
 
-// Three Days Weather HTML elements to edit
+// threeDays Weather HTML elements to edit
 const threeDays_temp = document.querySelector("#threeDays_temp");
 const threeDays_mph = document.querySelector("#threeDays_mph");
 const threeDays_weatherIcon = document.querySelector("#threeDays_icon");
