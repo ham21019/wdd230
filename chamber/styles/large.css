@@ -33,6 +33,11 @@
         grid-column: 2/3;
     }
 
+    .hero_img picture img {
+        object-fit: cover;
+        object-position: left;
+    }
+
     .local_biz {
         grid-column: 3/4;
         grid-row: 1/4;
