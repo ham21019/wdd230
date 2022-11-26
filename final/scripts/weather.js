@@ -4,7 +4,7 @@ const mph = document.querySelector("#mph");
 const weatherIcon = document.querySelector("#weather_icon");
 const captionDesc = document.querySelector("#figcaption");
 
-// omorrow Weather HTML elements to edit
+// tomorrow Weather HTML elements to edit
 const tomorrow_temp = document.querySelector("#tomorrow_temp");
 const tomorrow_mph = document.querySelector("#tomorrow_mph");
 const tomorrow_weatherIcon = document.querySelector("#tomorrow_icon");
