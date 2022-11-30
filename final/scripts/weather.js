@@ -1,24 +1,24 @@
 // Current Weather HTML elements to edit
 const temp = document.querySelector("#temp");
-const mph = document.querySelector("#mph");
+const humidity = document.querySelector("#humidity");
 const weatherIcon = document.querySelector("#weather_icon");
 const captionDesc = document.querySelector("#figcaption");
 
 // tomorrow Weather HTML elements to edit
 const tomorrow_temp = document.querySelector("#tomorrow_temp");
-const tomorrow_mph = document.querySelector("#tomorrow_mph");
+const tomorrow_humidity = document.querySelector("#tomorrow_humidity");
 const tomorrow_weatherIcon = document.querySelector("#tomorrow_icon");
 const tomorrow_captionDesc = document.querySelector("#tomorrow_figcaption");
 
 // twoDays Weather HTML elements to edit
 const twoDays_temp = document.querySelector("#twoDays_temp");
-const twoDays_mph = document.querySelector("#twoDays_mph");
+const twoDays_humidity = document.querySelector("#twoDays_humidity");
 const twoDays_weatherIcon = document.querySelector("#twoDays_icon");
 const twoDays_captionDesc = document.querySelector("#twoDays_figcaption");
 
 // threeDays Weather HTML elements to edit
 const threeDays_temp = document.querySelector("#threeDays_temp");
-const threeDays_mph = document.querySelector("#threeDays_mph");
+const threeDays_humidity = document.querySelector("#threeDays_humidity");
 const threeDays_weatherIcon = document.querySelector("#threeDays_icon");
 const threeDays_captionDesc = document.querySelector("#threeDays_figcaption");
 
@@ -72,21 +72,21 @@ function  displayResults(weatherData) {
   
   // current weather stats
   captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${desc.toUpperCase()}`;
-  mph.innerHTML = `<strong>Wind Speed:</strong> ${Math.round(weatherData.list[0].wind.speed)} mph`;
+  humidity.innerHTML = `<strong>Humidity:</strong> ${weatherData.list[0].main.humidity}%`;
   temp.innerHTML = `<strong>Current Temp:</strong> ${weatherData.list[0].main.temp.toFixed(0)}° F`;
   
   // tomorrow weather stats
   tomorrow_captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${tomorrow_desc.toUpperCase()}`;
-  tomorrow_mph.innerHTML = `<strong>Wind Speed:</strong> ${Math.round(weatherData.list[8].wind.speed)} mph`;
+  tomorrow_humidity.innerHTML = `<strong>Humidity:</strong> ${weatherData.list[8].main.humidity}%`;
   tomorrow_temp.innerHTML = `<strong>Temp:</strong> ${weatherData.list[8].main.temp.toFixed(0)}° F`;
   
   // twoDay weather stats
   twoDays_captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${twoDays_desc.toUpperCase()}`;
-  twoDays_mph.innerHTML = `<strong>Wind Speed:</strong> ${Math.round(weatherData.list[16].wind.speed)} mph`;
+  twoDays_humidity.innerHTML = `<strong>Humidity:</strong> ${weatherData.list[16].main.humidity}%`;
   twoDays_temp.innerHTML = `<strong>Temp:</strong> ${weatherData.list[16].main.temp.toFixed(0)}° F`;
   
   // threeDay weather stats
   threeDays_captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${threeDays_desc.toUpperCase()}`;
-  threeDays_mph.innerHTML = `<strong>Wind Speed:</strong> ${Math.round(weatherData.list[24].wind.speed)} mph`;
+  threeDays_humidity.innerHTML = `<strong>Humidity:</strong> ${weatherData.list[24].main.humidity}%`;
   threeDays_temp.innerHTML = `<strong>Temp:</strong> ${weatherData.list[24].main.temp.toFixed(0)}° F`;
 }
