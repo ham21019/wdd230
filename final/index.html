@@ -6,12 +6,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Final Project: Bountiful Foods Website | WDD 230 | BYU-Idaho | Mark Hammer</title>
         <script src="scripts/weather.js" defer></script>
+        <script src="scripts/lastmod.js" defer></script>
+        <script src="scripts/smoothie_counter.js" defer></script>
     </head>
     <body>
         <header>
-
+            <picture class="logo">
+                <img src="images/bountifulfoodslogo.png" alt="Bountiful Foods Logo" width="150" loading="lazy">
+            </picture>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img id="fb" src="images/facebook.png" alt="External link to FaceBook website" width="40" loading="lazy"></a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img id="twitter" src="images/twitter.jpg" alt="External link to Twitter website" width="40" loading="lazy"></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="insta" src="images/instagram.png" alt="External link to Instagram website" width="40" loading="lazy"></a>
+            </div>
+            <nav class="navigation">
+                <ul class="nav_list">
+                    <li><a class="ham" href="#">Menu</a></li>
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="fresh.html">Fresh Drinks</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
+            <div class="hero_image">
+                <img src="images/hero_image.webp" alt="Picture of the beach" width="800" loading="lazy">
+            </div>
+            <div class="summary_information">
+                <p>
+                    We would like to highlight La Jolla Shores this month. This is one of the most beautiful beaches in the world,
+                    let alone in SoCal. If you've never experienced a sunset here, you don't know what you are missing. We invite
+                    you to come an join us there every Thursday evening. We will have a food truck in the parking lot.
+                </p>
+            </div>
+            <div class="call_to_action">
+                <p>
+                    Bountiful foods serves the Southern California Beach Scene. All our ingredients are locally sourced and super fresh. 
+                    Our food trucks bring the freshness to you! <span id="click_here"><a href="fresh.html">Click Here</a></span> 
+                    to get your own smoothie recipe.
+                </p>
+            </div>
+            <div class="info_card">
+                <p>
+                    Total number of smoothies created from <a href="fresh.html">Fresh Drinks</a> page: <span id="smoothies_created"></span>
+                </p>
+            </div>
             <div class="weather">
                 <div id="current_weather">
                     <h2>Current Weather</h2>
@@ -27,27 +69,38 @@
                         <img id="tomorrow_icon" src="#" alt="Tomorrow's Weather Icon" width="50" loading="lazy">
                         <span id="tomorrow_figcaption"></span>
                         <span id="tomorrow_temp"></span>
-                        <span id="tomorrow_humidity"></span>
                     </div>
                     <div class="forecast" id="twoDays_weather">
                         <h4>In 2 Days</h4>
                         <img id="twoDays_icon" src="#" alt="twoDay's Weather Icon" width="50" loading="lazy">
                         <span id="twoDays_figcaption"></span>
                         <span id="twoDays_temp"></span>
-                        <span id="twoDays_humidity"></span>
                     </div>
                     <div class="forecast" id="threeDays_weather">
                         <h4>In 3 Days</h4>
                         <img id="threeDays_icon" src="#" alt="threeDay's Weather Icon" width="50" loading="lazy">
                         <span id="threeDays_figcaption"></span>
                         <span id="threeDays_temp"></span>
-                        <span id="threeDays_humidity"></span>
                     </div>  
                 </div>
             </div>
         </main>
         <footer>
-
+            <picture class="logo">
+                <img src="images/bountifulfoodslogo.png" alt="Bountiful Foods Logo" width="150" loading="lazy">
+            </picture>
+            <div class="contact_info">
+                <p>☎️ (760) 555-2468</p>
+                ✉ <a href="mailto:info@queencreekazchamber.com">info@bountifulfoods.com</a>
+            </div>
+            <div class="address">
+                <h3>123 Elm St. Carlsbad, CA 92008</h3>
+                <h3>📍 <a href="https://www.google.com/maps/place/Queen+Creek,+AZ/">location</a> 📍</h3>
+            </div>
+            <div id="lastmod"></div>
+            <div class="attribution">
+                
+            </div>
         </footer>
     </body>
 </html>
