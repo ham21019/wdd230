@@ -1,62 +1,5 @@
-// const fetchJSON = async () => {
-//     const jsonURL = "json/fruits.json";
-//     const req = new Request(jsonURL);
-//     const res = await fetch(req);
-//     const jsonObject = await res.json();
-//     const fruits = jsonObject["fruits"];
-//     console.log(fruits)
-//     // businesses.forEach(displayCards);
-// };
-
-// fetchJSON();
-
-// const getData = () => {
-//     sendHttpRequest('GET', "https://www.fruityvice.com/api/fruit/all").then(responseData => {
-//       console.log(responseData);
-//     });
-//   };
-
-//   getData()
-
-// const url = "https://www.fruityvice.com/api/fruit/all";
-
-// // apiFetch function to get JSON information
-// async function apiFetch() {
-//     const response = await fetch(url, {mode: "no-cors"});
-//     if (response.ok) {
-//       const data = await response.json();
-//       console.log(data); // test output in the console
-//       // displayResults(data);
-//     }
-// }
-
-// // run function to get API info
-// apiFetch();
-
-// function onGet() {
-//   const url = https://www.fruityvice.com/api/fruit/all;
-//   var headers = {}
-  
-//   fetch(url, {
-//       method : "GET",
-//       mode: 'no-cors',
-//       headers: headers
-//   })
-//   .then((response) => {
-//       if (!response.ok) {
-//           throw new Error(response.error)
-//       }
-//       return response.json();
-//   })
-//   .then(data => {
-//       document.getElementById('test').value = data.messages;
-//   })
-//   .catch(function(error) {
-//       document.getElementById('test').value = error;
-//   });
-// }
-
-const requestURL = "https://www.fruityvice.com/api/fruit/all";
+const requestURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
+const test = document.querySelector("#test");
 
 fetch(requestURL)
   .then(function (response) {
@@ -66,9 +9,32 @@ fetch(requestURL)
     console.table(jsonObject);
     const fruits = jsonObject["fruits"];
 
-    fruits.forEach(displayFruits);
+    // fruits.forEach(displayFruits);
   });
 
-function displayFruits(fruits) {
-  document.querySelector("#test").textContent = hello;
-}
+// // displayfruits function
+// function displayfruits(fruit) {
+//     let card = document.createElement("section");
+//     let h2 = document.createElement("h2");
+//     let portrait = document.createElement("img");
+//     let birth = document.createElement("p");
+  
+//     // Change the textContent property of the h2 element to contain the fruit's full name
+//     h2.textContent = `${fruit.name} ${fruit.lastname}`;
+  
+//     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+//     portrait.setAttribute("src", fruit.imageurl);
+//     portrait.setAttribute("alt", `Portait of ${fruit.name} ${fruit.lastname}`);
+//     portrait.setAttribute("loading", "lazy");
+    
+//     // birth place and birth date
+//     birth.textContent = `Born in ${fruit.birthplace} on ${fruit.birthdate}`;
+  
+//     // Add/append the section(card) with the h2 element
+//     card.appendChild(h2);
+//     card.appendChild(portrait);
+//     card.appendChild(birth);
+  
+//     // Add/append the existing HTML div with the cards class with the section(card)
+//     document.querySelector('div.cards').appendChild(card);
+//   }
