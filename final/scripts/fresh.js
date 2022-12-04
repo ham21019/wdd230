@@ -1,5 +1,3 @@
-// for loop found on: // javascript help found on: https://www.codebyamir.com/blog/populate-a-select-dropdown-list-with-json
-
 // define url for fetch request
 const requestURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 
@@ -38,6 +36,7 @@ fetch(requestURL)
     let optinoTwo;
     let optionThree;
 
+    // for loop found on: https://www.codebyamir.com/blog/populate-a-select-dropdown-list-with-json
     for (let i = 0; i < jsonObject.length; i++) {
       optionOne = document.createElement("option");
       optionOne.text = jsonObject[i].name;
@@ -53,7 +52,7 @@ fetch(requestURL)
     }
   });
 
-// form submission handling
+// form submission handling found on: https://stackoverflow.com/questions/62326521/how-do-i-get-form-submit-event-listener-to-work-in-js
 myForm = document.querySelector("form[name=myForm]");
 myForm.querySelector("button").addEventListener('click', function() {
   myForm.requestSubmit();
@@ -75,7 +74,11 @@ function displayForm() {
   let formFruitThree = document.querySelector("#dropdown_three").value;
   let formSpecial = document.querySelector("#form_special").value;
 
+  // create date variable for order date
+  const date = new Date();
+
   let result = `
+    Order Date: ${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()},
     First Name: ${formName},
     Email: ${formEmail},
     Phone: ${formPhone},
