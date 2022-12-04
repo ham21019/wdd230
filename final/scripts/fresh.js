@@ -33,7 +33,7 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     let optionOne;
-    let optinoTwo;
+    let optionTwo;
     let optionThree;
 
     // for loop found on: https://www.codebyamir.com/blog/populate-a-select-dropdown-list-with-json
@@ -42,8 +42,8 @@ fetch(requestURL)
       optionOne.text = jsonObject[i].name;
       dropdownOne.add(optionOne);
 
-      optinoTwo = document.createElement("option");
-      optinoTwo.text = jsonObject[i].name;
+      optionTwo = document.createElement("option");
+      optionTwo.text = jsonObject[i].name;
       dropdownTwo.add(optinoTwo);
 
       optionThree = document.createElement("option");
