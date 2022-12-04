@@ -1,13 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="scripts/fresh.js" defer></script>
-</head>
-<body>
-    <div id="test"></div>  
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Final Project for the WDD230 course at BYU-Idaho for Mark Hammer">
+        <title>Final Project: Bountiful Foods Website | WDD 230 | BYU-Idaho | Mark Hammer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+        <script src="scripts/lastmod.js" defer></script>
+        <script src="scripts/fresh.js" defer></script>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <picture class="logo">
+                <img src="images/bountifulfoodslogo.png" alt="Bountiful Foods Logo" width="150" loading="lazy">
+            </picture>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img id="fb" src="images/facebook.png" alt="External link to FaceBook website" width="40" loading="lazy"></a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img id="twitter" src="images/twitter.jpg" alt="External link to Twitter website" width="40" loading="lazy"></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="insta" src="images/instagram.png" alt="External link to Instagram website" width="40" loading="lazy"></a>
+            </div>
+            <nav class="navigation">
+                <ul class="nav_list">
+                    <li><a class="ham" href="#">Menu</a></li>
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="fresh.html">Fresh Drinks</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="specialty_drinks">
+                <p>
+                    Our drinks are as fresh as you can get!
+                </p>
+                <p>
+                    Use the form below to create your own smoothie receipe
+                </p>
+            </div>
+            <div class="smoothie_form">
+                <h1>Create your own Smoothie</h1>
+                <p>* indicates required</p>
+                <form name="myForm">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label class="top">
+                            <span>First Name*</span>
+                            <input type="text" name="fname" id="form_first" autofocus required>
+                        </label>
+                        <label class="top">
+                            <span>Email*</span>
+                            <input type="email" name="email" id="form_email" placeholder="name@here.com" required>
+                        </label>
+                        <label class="top">
+                            <span>Phone*</span>
+                            <input type="tel" name="phone" id="form_phone" placeholder="7605557654" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Choose Your Ingredients</legend>
+                        <label class="top">
+                            <span>Fruit #1*</span>
+                            <select name="fruit_one" id="dropdown_one"></select>
+                        </label>
+                        <label class="top">
+                            <span>Fruit #2*</span>
+                            <select name="fruit_two" id="dropdown_two"></select>
+                        </label>
+                        <label class="top">
+                            <span>Fruit #3*</span>
+                            <select name="fruit_three" id="dropdown_three"></select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Special Instructions</legend>
+                        <label class="top">
+                            <span>Anything else?</span>
+                            <textarea name="description" id="form_special" rows="4" placeholder="Any special needs go here"></textarea>
+                        </label>
+                    </fieldset>
+                    <!-- <input type="submit" value="Create Smoothie!" id="submitBtn"> -->
+                    <button type="button" id="submitBtn">Create Smoothie!</button>
+                </form>
+            </div>
+            <div class="output_smoothie">
+                <ul id="new_drink"></ul>
+            </div>
+        </main>
+        <footer>
+            <picture class="logo">
+                <img src="images/bountifulfoodslogo.png" alt="Bountiful Foods Logo" width="150" loading="lazy">
+            </picture>
+            <div class="contact_info">
+                <p>☎️ (760) 555-2468</p>
+                ✉ <a href="mailto:info@bountifulfoods.com">info@bountifulfoods.com</a>
+            </div>
+            <div class="address">
+                <h3>123 Elm St. Carlsbad, CA 92008</h3>
+                <h3>📍 <a href="https://www.google.com/maps/place/Carlsbad,+CA/">location</a> 📍</h3>
+            </div>
+            <div id="lastmod"></div>
+        </footer>
+    </body>
 </html>
