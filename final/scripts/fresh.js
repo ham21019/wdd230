@@ -26,8 +26,6 @@ dropdownTwo.selectedIndex = 0;
 dropdownThree.add(defaultOptionThree);
 dropdownThree.selectedIndex = 0;
 
-// document.querySelector("#fruit_one_carbs").value = jsonObject[i].nutritions.carbohydrates;
-
 // fetch and process json file
 fetch(requestURL)
   .then(function (response) {
