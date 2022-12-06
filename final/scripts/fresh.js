@@ -26,6 +26,8 @@ dropdownTwo.selectedIndex = 0;
 dropdownThree.add(defaultOptionThree);
 dropdownThree.selectedIndex = 0;
 
+// document.querySelector("#fruit_one_carbs").value = jsonObject[i].nutritions.carbohydrates;
+
 // fetch and process json file
 fetch(requestURL)
   .then(function (response) {
@@ -33,23 +35,26 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     let optionOne;
-    let optinoTwo;
+    let optionTwo;
     let optionThree;
+    fruits = jsonObject;
+    console.log(fruits);
 
     // for loop found on: https://www.codebyamir.com/blog/populate-a-select-dropdown-list-with-json
     for (let i = 0; i < jsonObject.length; i++) {
       optionOne = document.createElement("option");
       optionOne.text = jsonObject[i].name;
       dropdownOne.add(optionOne);
-
-      optinoTwo = document.createElement("option");
-      optinoTwo.text = jsonObject[i].name;
-      dropdownTwo.add(optinoTwo);
-
+      
+      optionTwo = document.createElement("option");
+      optionTwo.text = jsonObject[i].name;
+      dropdownTwo.add(optionTwo);
+      
       optionThree = document.createElement("option");
       optionThree.text = jsonObject[i].name;
       dropdownThree.add(optionThree);
     }
+    return fruits;
   });
 
 // form submission handling found on: https://stackoverflow.com/questions/62326521/how-do-i-get-form-submit-event-listener-to-work-in-js
@@ -60,7 +65,7 @@ myForm.querySelector("button").addEventListener('click', function() {
 
 myForm.addEventListener('submit', function(e) {
   e.preventDefault()
-  console.log("Submitting form");
+  // console.log("Submitting form");
   displayForm()
 })
 
@@ -77,17 +82,85 @@ function displayForm() {
   // create date variable for order date
   const date = new Date();
 
-  let result = `
-    Order Date: ${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()},
-    First Name: ${formName},
-    Email: ${formEmail},
-    Phone: ${formPhone},
-    Fruit #1: ${formFruitOne},
-    Fruit #2: ${formFruitTwo},
-    Fruit #3: ${formFruitThree},
-    Special Instructions: ${formSpecial}`;
+  // carb variables
+  let fruitCarbOne = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_one").value ;});
+  let fruitCarbTwo = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_two").value ;});
+  let fruitCarbThree = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_three").value ;});
+  let carbTotal = fruitCarbOne[0].nutritions.carbohydrates + fruitCarbTwo[0].nutritions.carbohydrates + fruitCarbThree[0].nutritions.carbohydrates;
+
+  // protein variables
+  let fruitProteinOne = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_one").value ;});
+  let fruitProteinTwo = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_two").value ;});
+  let fruitProteinThree = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_three").value ;});
+  let proteinTotal = fruitProteinOne[0].nutritions.protein + fruitProteinTwo[0].nutritions.protein + fruitProteinThree[0].nutritions.protein;
+
+  // fat variables
+  let fruitFatOne = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_one").value ;});
+  let fruitFatTwo = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_two").value ;});
+  let fruitFatThree = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_three").value ;});
+  let fatTotal = fruitFatOne[0].nutritions.fat + fruitFatTwo[0].nutritions.fat + fruitFatThree[0].nutritions.fat;
+
+  // sugar variables
+  let fruitSugarOne = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_one").value ;});
+  let fruitSugarTwo = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_two").value ;});
+  let fruitSugarThree = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_three").value ;});
+  let sugarTotal = fruitSugarOne[0].nutritions.sugar + fruitSugarTwo[0].nutritions.sugar + fruitSugarThree[0].nutritions.sugar;
   
-  document.querySelector("#new_drink").textContent = result;
+  let result = `
+    <table>
+      <caption>Your Order Information</caption>
+      <tbody>
+        <tr>
+          <td>Order Date: </td>
+          <td>${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}</td>
+        </tr>
+        <tr>
+          <td>First Name: </td>
+          <td>${formName}</td>
+        </tr>
+        <tr>
+          <td>Email: </td>
+          <td>${formEmail}</td>
+        </tr>
+        <tr>
+          <td>Phone: </td>
+          <td>${formPhone}</td>
+        </tr>
+        <tr>
+          <td>Fruit #1: </td>
+          <td>${formFruitOne}</td>
+        </tr>
+        <tr>
+          <td>Fruit #2: </td>
+          <td>${formFruitTwo}</td>
+        </tr>
+        <tr>
+          <td>Fruit #3: </td>
+          <td>${formFruitThree}</td>
+        </tr>
+        <tr>
+          <td>Special Instructions: </td>
+          <td>${formSpecial}</td>
+        </tr>
+        <tr>
+          <td>Total Carbs: </td>
+          <td>${carbTotal} grams</td>
+        </tr>
+        <tr>
+          <td>Total Protein: </td>
+          <td>${proteinTotal} grams</td>
+        </tr>
+        <tr>
+          <td>Total Fat: </td>
+          <td>${fatTotal} grams</td>
+        </tr>
+        <tr>
+          <td>Total Sugar: </td>
+          <td>${sugarTotal} grams</td>
+        </tr>
+    </table>`;
+  
+  document.querySelector("#new_drink").innerHTML = result;
 
   // reset form
   document.querySelector("#form_first").value = "";
