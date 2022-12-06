@@ -80,6 +80,8 @@ function displayForm() {
   // create date variable for order date
   const date = new Date();
 
+  // filter logic help found at: https://stackoverflow.com/questions/5257786/whats-the-best-way-to-query-an-array-in-javascript-to-get-just-the-items-from-i
+  
   // carb variables
   let fruitCarbOne = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_one").value ;});
   let fruitCarbTwo = fruits.filter(function(fruit) {return fruit.name == document.querySelector("#dropdown_two").value ;});
