@@ -6,18 +6,18 @@ const captionDesc = document.querySelector("#figcaption");
 
 // tomorrow Weather HTML elements to edit
 const tomorrow_temp = document.querySelector("#tomorrow_temp");
-const tomorrow_weatherIcon = document.querySelector("#tomorrow_icon");
-const tomorrow_captionDesc = document.querySelector("#tomorrow_figcaption");
+// const tomorrow_weatherIcon = document.querySelector("#tomorrow_icon");
+// const tomorrow_captionDesc = document.querySelector("#tomorrow_figcaption");
 
 // twoDays Weather HTML elements to edit
 const twoDays_temp = document.querySelector("#twoDays_temp");
-const twoDays_weatherIcon = document.querySelector("#twoDays_icon");
-const twoDays_captionDesc = document.querySelector("#twoDays_figcaption");
+// const twoDays_weatherIcon = document.querySelector("#twoDays_icon");
+// const twoDays_captionDesc = document.querySelector("#twoDays_figcaption");
 
 // threeDays Weather HTML elements to edit
 const threeDays_temp = document.querySelector("#threeDays_temp");
-const threeDays_weatherIcon = document.querySelector("#threeDays_icon");
-const threeDays_captionDesc = document.querySelector("#threeDays_figcaption");
+// const threeDays_weatherIcon = document.querySelector("#threeDays_icon");
+// const threeDays_captionDesc = document.querySelector("#threeDays_figcaption");
 
 // url variable for Carlsbad, CA
 const url = "https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&cnt=25&units=imperial&appid=209401470a99f981b833442b6de9857c";
@@ -49,23 +49,23 @@ function  displayResults(weatherData) {
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
 
-  // tomorrow weather icon
-  const tomorrow_iconsrc = `https://openweathermap.org/img/wn/${weatherData.list[8].weather[0].icon}@4x.png`;
-  const tomorrow_desc = weatherData.list[8].weather[0].description;
-  tomorrow_weatherIcon.setAttribute('src', tomorrow_iconsrc);
-  tomorrow_weatherIcon.setAttribute('alt', tomorrow_desc);
+  // // tomorrow weather icon
+  // const tomorrow_iconsrc = `https://openweathermap.org/img/wn/${weatherData.list[8].weather[0].icon}@4x.png`;
+  // const tomorrow_desc = weatherData.list[8].weather[0].description;
+  // tomorrow_weatherIcon.setAttribute('src', tomorrow_iconsrc);
+  // tomorrow_weatherIcon.setAttribute('alt', tomorrow_desc);
 
-  // twoDay weather icon
-  const twoDays_iconsrc = `https://openweathermap.org/img/wn/${weatherData.list[16].weather[0].icon}@4x.png`;
-  const twoDays_desc = weatherData.list[16].weather[0].description;
-  twoDays_weatherIcon.setAttribute('src', twoDays_iconsrc);
-  twoDays_weatherIcon.setAttribute('alt', twoDays_desc);
+  // // twoDay weather icon
+  // const twoDays_iconsrc = `https://openweathermap.org/img/wn/${weatherData.list[16].weather[0].icon}@4x.png`;
+  // const twoDays_desc = weatherData.list[16].weather[0].description;
+  // twoDays_weatherIcon.setAttribute('src', twoDays_iconsrc);
+  // twoDays_weatherIcon.setAttribute('alt', twoDays_desc);
 
-  // threeDay weather icon
-  const threeDays_iconsrc = `https://openweathermap.org/img/wn/${weatherData.list[24].weather[0].icon}@4x.png`;
-  const threeDays_desc = weatherData.list[24].weather[0].description;
-  threeDays_weatherIcon.setAttribute('src', threeDays_iconsrc);
-  threeDays_weatherIcon.setAttribute('alt', threeDays_desc);
+  // // threeDay weather icon
+  // const threeDays_iconsrc = `https://openweathermap.org/img/wn/${weatherData.list[24].weather[0].icon}@4x.png`;
+  // const threeDays_desc = weatherData.list[24].weather[0].description;
+  // threeDays_weatherIcon.setAttribute('src', threeDays_iconsrc);
+  // threeDays_weatherIcon.setAttribute('alt', threeDays_desc);
   
   // current weather stats
   captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${desc.toUpperCase()}`;
@@ -73,14 +73,14 @@ function  displayResults(weatherData) {
   temp.innerHTML = `<strong>Current Temp:</strong> ${weatherData.list[0].main.temp.toFixed(0)}° F`;
   
   // tomorrow weather stats
-  tomorrow_captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${tomorrow_desc.toUpperCase()}`;
+  // tomorrow_captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${tomorrow_desc.toUpperCase()}`;
   tomorrow_temp.innerHTML = `<strong>Temp:</strong> ${weatherData.list[8].main.temp.toFixed(0)}° F`;
   
   // twoDay weather stats
-  twoDays_captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${twoDays_desc.toUpperCase()}`;
+  // twoDays_captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${twoDays_desc.toUpperCase()}`;
   twoDays_temp.innerHTML = `<strong>Temp:</strong> ${weatherData.list[16].main.temp.toFixed(0)}° F`;
   
   // threeDay weather stats
-  threeDays_captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${threeDays_desc.toUpperCase()}`;
+  // threeDays_captionDesc.innerHTML = `<strong>Cloud Conditions:</strong> ${threeDays_desc.toUpperCase()}`;
   threeDays_temp.innerHTML = `<strong>Temp:</strong> ${weatherData.list[24].main.temp.toFixed(0)}° F`;
 }
