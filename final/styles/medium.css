@@ -54,4 +54,9 @@
     #lastmod, #accreditation {
         font-size: 1rem;
     }
+
+    .historical_info {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
 }

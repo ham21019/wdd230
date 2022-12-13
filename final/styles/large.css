@@ -69,4 +69,9 @@
     .forecast span {
         font-size: 1.2rem;
     }
+
+    .historical_info {
+        padding-left: 18rem;
+        padding-right: 18rem;
+    }
 }
