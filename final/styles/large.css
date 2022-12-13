@@ -47,6 +47,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border-top: 5px solid #00e8fc;
+        border-left: none;
+        line-height: 1.5rem;
     }
 
     #second_fruit {
@@ -60,6 +63,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border-right: none;
+        line-height: 3.5rem;
     }
 
     .weather {

@@ -26,6 +26,7 @@
     .summary_information {
         grid-column: 1/2;
         grid-row: 2/3;
+        border-right: none;
     }
 
     #first_fruit {
@@ -36,6 +37,7 @@
     #second_fruit {
         grid-column: 1/2;
         grid-row: 3/4;
+        border-right: none;
     }
 
     .info_card {
