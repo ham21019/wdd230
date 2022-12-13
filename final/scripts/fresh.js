@@ -144,19 +144,19 @@ function displayForm() {
         </tr>
         <tr>
           <td>Total Carbs: </td>
-          <td>${carbTotal} grams</td>
+          <td>${carbTotal.toFixed(2)} grams</td>
         </tr>
         <tr>
           <td>Total Protein: </td>
-          <td>${proteinTotal} grams</td>
+          <td>${proteinTotal.toFixed(2)} grams</td>
         </tr>
         <tr>
           <td>Total Fat: </td>
-          <td>${fatTotal} grams</td>
+          <td>${fatTotal.toFixed(2)} grams</td>
         </tr>
         <tr>
           <td>Total Sugar: </td>
-          <td>${sugarTotal} grams</td>
+          <td>${sugarTotal.toFixed(2)} grams</td>
         </tr>
     </table>`;
   
