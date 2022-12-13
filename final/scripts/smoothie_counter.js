@@ -6,7 +6,7 @@ let smoothieCounter = Number(window.localStorage.getItem("smoothies"));
 
 // determine if this is the first time
 if (smoothieCounter !== 0) {
-	smoothies.textContent = `Number of Smoothies: ${smoothieCounter}`;
+	smoothies.innerHTML = `Total number of Smoothies: <strong>${smoothieCounter}</strong>`;
 } else {
 	smoothies.textContent = `No Smoothies yet!`;
 }

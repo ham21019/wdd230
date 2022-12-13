@@ -96,20 +96,16 @@ main {
     border-top: 5px solid #e54f6d;
     border-left: 5px solid #e54f6d;
     border-right: 5px solid #e54f6d;
+    text-align: center;
 }
 
-.hero_image {
+.hero_image, .fruit_image {
     border-top: 5px solid #00e8fc;
     border-left: 5px solid #00e8fc;
     border-right: 5px solid #00e8fc;
 }
 
-.hero_image picture {
-    min-height: 100%;
-    width: 100%;
-}
-
-.hero_image img {
+.hero_image img, .fruit_image img {
     min-height: 100%;
     width: 100%;
 }
@@ -143,11 +139,10 @@ main {
     border:5px solid #e54f6d;
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding: 10px 0;
 }
 
-#current_weather h2 {
+#current_weather h2, #current_weather h3 {
     margin: 0;
     padding-bottom: 10px;
 }
@@ -172,7 +167,6 @@ main {
 
 #weather_forecast h3 {
     grid-column: 1/4;
-    text-align: center;
     margin: 0;
     padding: 10px 0;
     border: 5px solid #00e8fc;
@@ -180,7 +174,6 @@ main {
 
 .forecast {
     border-bottom:5px solid #00e8fc;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,6 +182,11 @@ main {
 
 .forecast h4 {
     margin: 0;
+    padding-bottom: 5px;
+}
+
+.forecast span {
+    font-size: .8rem;
 }
 
 #tomorrow_weather {
@@ -216,4 +214,8 @@ footer {
     background-color: #00e8fc;
     border: 5px solid #e54f6d;
     padding: 20px 0;
+}
+
+#lastmod, #accreditation {
+    font-size: .8rem;
 }
