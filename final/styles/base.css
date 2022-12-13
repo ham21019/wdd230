@@ -113,6 +113,11 @@ main {
     width: 100%;
 }
 
+.hero_image img, #first_fruit img, #second_fruit img {
+    object-fit: cover;
+    object-position: left;
+}
+
 .summary_information {
     border-top: 5px solid #00e8fc;
     border-left: 5px solid #00e8fc;
