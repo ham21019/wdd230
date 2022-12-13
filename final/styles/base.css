@@ -349,6 +349,11 @@ tr:nth-child(even) {
     padding-bottom: 15px;
 }
 
+.main_contact_info img {
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
 #owner {
     font-weight: bold;
 }
@@ -362,3 +367,4 @@ tr:nth-child(even) {
     height: 100%;
     width: 100%;
 }
+
