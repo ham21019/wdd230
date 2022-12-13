@@ -5,6 +5,7 @@ body {
     margin: 0 auto;
     font-size: 16px;
     font-family: "barlow", sans-serif;
+    max-width: 1200px;
 }
 
 header {

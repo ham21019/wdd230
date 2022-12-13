@@ -1,0 +1,57 @@
+@media only screen and (min-width: 37.5em) {
+    body {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .navigation li a {
+        font-size: 1.8rem;
+    }
+
+    .socialmedia a img {
+        width: 50px;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero_image {
+        grid-column: 1/3;
+    }
+
+    .summary_information {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #first_fruit {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #second_fruit {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .info_card {
+        grid-column: 1/3;
+
+    }
+
+    .weather {
+        grid-column: 1/3;
+    }
+
+    .forecast span {
+        font-size: 1rem;
+    }
+
+    #lastmod, #accreditation {
+        font-size: 1rem;
+    }
+}
