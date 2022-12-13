@@ -219,3 +219,94 @@ footer {
 #lastmod, #accreditation {
     font-size: .8rem;
 }
+
+/* fresh.html css */
+#fresh_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form fieldset {
+    margin: 1rem;
+    border: 2px #00e8fc solid;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    min-width: 15rem;
+    box-shadow: 1px 0px 0.6rem #e54f6d;
+}
+
+form legend {
+    color: #192424;
+    margin: 0 1rem;
+    padding: .4rem .8rem;
+    background-color: #00e8fc;
+    border-radius: 15px;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: #192424;
+    font-size: 1.2rem;
+}
+
+form label.top input, textarea {
+    display: block;
+    font-size: 1rem;
+    border: 2px solid #e54f6d;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #192424;
+    width: 88%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.membership {
+    display: block;
+    padding: .75rem 0;
+    color: #192424;
+}
+
+form label.top input:required {
+    border-left: red solid 8px;
+}
+
+form label.top input:required:valid {
+    border-left: #679436 solid 8px;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: #00e8fc;
+    color: #192424;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 1px 0px 0.6rem #e54f6d;
+}
+
+.output_smoothie {
+    margin: 10px 10px 0 10px;
+}
+
+table {
+    border: 8px double #00e8fc;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+    border: 2px solid #e54f6d;
+}
+
+caption {
+    padding: 10px;
+    color: #192424;
+    font-size: 1.1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #00e8fc33;
+}

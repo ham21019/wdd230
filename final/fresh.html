@@ -36,7 +36,7 @@
                 <p><a href="aboutus.html">About Us</a></p>
             </nav>
         </header>
-        <main>
+        <main id="fresh_main">
             <div class="specialty_drinks">
                 <p>
                     Our drinks are as fresh as you can get!
@@ -67,15 +67,15 @@
                     <fieldset>
                         <legend>Choose Your Ingredients</legend>
                         <label class="top">
-                            <span>Fruit #1*</span>
+                            <span>1st Fruit</span>
                             <select name="fruit_one" id="dropdown_one"></select>
                         </label>
                         <label class="top">
-                            <span>Fruit #2*</span>
+                            <span>2nd Fruit</span>
                             <select name="fruit_two" id="dropdown_two"></select>
                         </label>
                         <label class="top">
-                            <span>Fruit #3*</span>
+                            <span>3rd Fruit</span>
                             <select name="fruit_three" id="dropdown_three"></select>
                         </label>
                     </fieldset>
@@ -83,19 +83,19 @@
                         <legend>Special Instructions</legend>
                         <label class="top">
                             <span>Anything else?</span>
-                            <textarea name="description" id="form_special" rows="4" placeholder="Any special needs go here"></textarea>
+                            <textarea name="description" id="form_special" rows="5" placeholder="Any special needs go here"></textarea>
                         </label>
                     </fieldset>
-                    <fieldset>
+                    <!-- <fieldset>
                         <input type="hidden" name="fruit_one_carbs" id="fruit_one_carbs" value="">
                         <input type="hidden" name="fruit_two_carbs" id="fruit_two_carbs" value="">
                         <input type="hidden" name="fruit_three_carbs" id="fruit_three_carbs" value="">
-                    </fieldset>
+                    </fieldset> -->
                     <button type="button" id="submitBtn">Create Smoothie!</button>
                 </form>
             </div>
             <div class="output_smoothie">
-                <ul id="new_drink"></ul>
+                <p id="new_drink"></p>
             </div>
         </main>
         <footer>
