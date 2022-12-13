@@ -343,6 +343,10 @@ tr:nth-child(even) {
     padding-bottom: 15px;
 }
 
+#owner {
+    font-weight: bold;
+}
+
 .google_map {
     padding: 10px;
     border: 5px solid #00e8fc;
