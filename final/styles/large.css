@@ -7,7 +7,7 @@
 		display: flex;
     }
 
-	.navigation li {
+	.navigation p {
 		display: block;
 		flex: 1 1 auto;
 	}
@@ -17,7 +17,7 @@
         font-weight: bolder;
 	}
 
-	.navigation li:first-child {
+	.navigation p:first-child {
 		display: none;
 	}
 
@@ -33,6 +33,7 @@
     .summary_information {
         grid-column: 1/4;
         grid-row: 2/3;
+        font-size: 2rem;
     }
 
     #first_fruit {
